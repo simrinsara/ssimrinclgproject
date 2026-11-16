@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventify — Campus &amp; Community Events</title>
+    <meta
+      name="description"
+      content="An editorial campus and community event discovery and registration platform built with HTML, CSS, and vanilla JavaScript."
+    />
+    <meta property="og:title" content="Eventify — Campus & Community Events" />
+    <meta
+      property="og:description"
+      content="Discover upcoming campus workshops, talks, cultural evenings, and register in seconds."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body data-page="home">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header id="site-header" class="site-header"></header>
+
+    <main id="main-content">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero__grid">
+            <div class="hero__content">
+              <p class="hero__eyebrow">Autumn Term 2026 &middot; Campus Calendar</p>
+              <h1 class="editorial-heading hero__title">
+                Thoughtful campus gatherings, organized in one place.
+              </h1>
+              <p class="hero__description">
+                Eventify brings together student workshops, faculty lectures, acoustic evenings, and
+                community runs across campus. Browse the schedule, read full session details, and
+                reserve your seat in under a minute.
+              </p>
+              <div class="hero__actions">
+                <a href="events.html" class="btn btn--primary">Explore All Events</a>
+                <a href="register.html" class="btn btn--secondary">Register for a Pass</a>
+              </div>
+            </div>
+
+            <div>
+              <div class="hero__media">
+                <img
+                  src="/src/assets/images/hero_keynote_hall_1794814590723.jpg"
+                  alt="Students seated inside a warm timber university auditorium during an autumn keynote"
+                  referrerpolicy="no-referrer"
+                />
+                <div class="media-frame__fallback">
+                  <span>Founders Hall Symposium</span>
+                </div>
+              </div>
+              <p class="hero__caption">
+                Founders Hall Main Auditorium during last season’s opening sustainability talk.
+              </p>
+            </div>
+          </div>
+
+          <div class="hero__strip" aria-label="Calendar overview">
+            <div>
+              <div class="strip-item__label">Active listings</div>
+              <div class="strip-item__value tabular-nums">6 Events</div>
+            </div>
+            <div>
+              <div class="strip-item__label">Season window</div>
+              <div class="strip-item__value tabular-nums">Nov &ndash; Dec 2026</div>
+            </div>
+            <div>
+              <div class="strip-item__label">Student admission</div>
+              <div class="strip-item__value">Free Entry</div>
+            </div>
+            <div>
+              <div class="strip-item__label">Pass storage</div>
+              <div class="strip-item__value">Instant Confirmation</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Events -->
+      <section class="section section--tinted" aria-labelledby="featured-heading">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <h2 id="featured-heading" class="editorial-heading section-head__title">
+                Featured Events
+              </h2>
+              <p class="section-head__subtitle">
+                Highlighted sessions curated for this month across design, architecture, and research.
+              </p>
+            </div>
+            <a href="events.html" class="text-link">View full directory &rarr;</a>
+          </div>
+
+          <div id="featured-events-grid" class="featured-grid"></div>
+        </div>
+      </section>
+
+      <!-- Upcoming Schedule -->
+      <section class="section" aria-labelledby="upcoming-heading">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <h2 id="upcoming-heading" class="editorial-heading section-head__title">
+                Upcoming Schedule
+              </h2>
+              <p class="section-head__subtitle">
+                Chronological calendar of the next campus events open for registration.
+              </p>
+            </div>
+            <a href="my-registrations.html" class="text-link">Check my registrations &rarr;</a>
+          </div>
+
+          <div id="upcoming-events-list" class="upcoming-list"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="site-footer" class="site-footer"></footer>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

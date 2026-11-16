@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us — Eventify</title>
+    <meta
+      name="description"
+      content="Learn about Eventify’s mission to connect students, faculty, and local organizers around campus events."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body data-page="about">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header id="site-header" class="site-header"></header>
+
+    <main id="main-content">
+      <section class="page-header">
+        <div class="container">
+          <p class="page-header__eyebrow">Our Purpose</p>
+          <h1 class="editorial-heading page-header__title">
+            Built to keep campus life visible and welcoming.
+          </h1>
+          <p class="page-header__lead">
+            Eventify started as a web development project to replace scattered bulletin-board flyers
+            and buried email newsletters with one calm, dependable event calendar.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="about-story">
+            <div class="about-story__prose">
+              <p>
+                Every semester, student clubs, academic departments, and community organizers host
+                dozens of thoughtful workshops, lectures, concerts, and study showcases. Too often,
+                students hear about them the morning after they happen simply because announcements
+                are fragmented across different platforms.
+              </p>
+              <p>
+                Eventify brings those listings together in an editorial, distraction-free format.
+                Instead of noisy social feeds or complicated ticketing checkouts, every listing gives
+                you the essentials right away: what the session covers, when and where it takes
+                place, and a single straightforward form to save your spot.
+              </p>
+              <p>
+                Developed with clean HTML, CSS, and vanilla JavaScript, the site keeps registration
+                records directly in your browser’s local storage so students can manage their
+                passes quickly without creating another password or account.
+              </p>
+              <div style="margin-top: 24px;">
+                <a href="events.html" class="btn btn--primary">Browse Current Events</a>
+              </div>
+            </div>
+
+            <div>
+              <div class="media-frame" style="border-radius: var(--radius-md); border: 1px solid var(--color-border);">
+                <img
+                  src="/src/assets/images/event_literature_panel_1794814592324.jpg"
+                  alt="Students seated at an afternoon literary talk inside Carnegie Library"
+                  referrerpolicy="no-referrer"
+                />
+                <div class="media-frame__fallback">
+                  <span>Carnegie Library Seminar</span>
+                </div>
+              </div>
+              <p class="hero__caption">
+                Small-press reading and student zine fair inside Carnegie Library, Reading Room B.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tinted" aria-labelledby="principles-heading">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <h2 id="principles-heading" class="editorial-heading section-head__title">
+                How Eventify Works
+              </h2>
+              <p class="section-head__subtitle">
+                Three practical principles behind the platform’s design and workflow.
+              </p>
+            </div>
+          </div>
+
+          <div class="values-grid">
+            <div class="value-item">
+              <div class="value-item__number tabular-nums">01. Discovery</div>
+              <h3 class="value-item__title">Readable Calendar</h3>
+              <p class="value-item__text">
+                Filter events by category or search by venue and topic without clutter, popups, or
+                unnecessary visual noise.
+              </p>
+            </div>
+
+            <div class="value-item">
+              <div class="value-item__number tabular-nums">02. Registration</div>
+              <h3 class="value-item__title">Fast Seat Reservations</h3>
+              <p class="value-item__text">
+                A clear form validates your contact details, checks for duplicate bookings, and
+                issues an instant confirmation code.
+              </p>
+            </div>
+
+            <div class="value-item">
+              <div class="value-item__number tabular-nums">03. Accessibility</div>
+              <h3 class="value-item__title">Built for Every Screen</h3>
+              <p class="value-item__text">
+                Semantic landmarks, keyboard focus indicators, high-contrast typography, and
+                responsive layouts ensure smooth navigation on desktop or mobile.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="site-footer" class="site-footer"></footer>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

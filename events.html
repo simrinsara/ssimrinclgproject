@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events Directory — Eventify</title>
+    <meta
+      name="description"
+      content="Browse and filter all upcoming campus workshops, conferences, cultural concerts, and seminars on Eventify."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body data-page="events">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header id="site-header" class="site-header"></header>
+
+    <main id="main-content">
+      <section class="page-header">
+        <div class="container">
+          <p class="page-header__eyebrow">Event Directory</p>
+          <h1 class="editorial-heading page-header__title">All Campus Events</h1>
+          <p class="page-header__lead">
+            Filter by category or search by event title, venue, or keyword to find sessions that
+            fit your schedule.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="filter-toolbar">
+            <div class="search-box">
+              <label for="event-search-input" class="sr-only">Search events</label>
+              <svg
+                class="search-box__icon"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input
+                type="search"
+                id="event-search-input"
+                class="search-box__input"
+                placeholder="Search by title, venue, or topic..."
+              />
+            </div>
+
+            <div id="category-tabs" class="category-tabs" role="group" aria-label="Filter by category"></div>
+          </div>
+
+          <p id="results-summary" class="results-summary" aria-live="polite"></p>
+
+          <div id="all-events-grid" class="events-grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="site-footer" class="site-footer"></footer>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

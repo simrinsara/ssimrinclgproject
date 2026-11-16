@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register — Eventify</title>
+    <meta
+      name="description"
+      content="Reserve your seat for an upcoming campus workshop, symposium, or cultural event on Eventify."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body data-page="register">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header id="site-header" class="site-header"></header>
+
+    <main id="main-content">
+      <section class="page-header">
+        <div class="container">
+          <p class="page-header__eyebrow">Attendee RSVP</p>
+          <h1 class="editorial-heading page-header__title">Event Registration</h1>
+          <p class="page-header__lead">
+            Complete the form below to reserve your pass. Confirmed registrations are stored in
+            your browser and can be reviewed anytime on the Registrations page.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="form-layout">
+            <div>
+              <div id="registration-feedback"></div>
+
+              <form id="registration-form" class="form-card" novalidate>
+                <div class="form-group">
+                  <label for="reg-name" class="form-label">
+                    Full Name <span class="form-label__required" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="reg-name"
+                    name="name"
+                    class="form-control"
+                    placeholder="e.g., Maya Patel"
+                    autocomplete="name"
+                    aria-describedby="reg-name-error"
+                    required
+                  />
+                  <div id="reg-name-error" class="field-error" aria-live="polite"></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="reg-email" class="form-label">
+                    Email Address <span class="form-label__required" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    id="reg-email"
+                    name="email"
+                    class="form-control"
+                    placeholder="e.g., maya.patel@university.edu"
+                    autocomplete="email"
+                    aria-describedby="reg-email-error"
+                    required
+                  />
+                  <div id="reg-email-error" class="field-error" aria-live="polite"></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="reg-phone" class="form-label">
+                    Phone Number <span class="form-label__required" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="tel"
+                    id="reg-phone"
+                    name="phone"
+                    class="form-control"
+                    placeholder="e.g., (555) 234-5678"
+                    autocomplete="tel"
+                    aria-describedby="reg-phone-error"
+                    required
+                  />
+                  <div id="reg-phone-error" class="field-error" aria-live="polite"></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="reg-event" class="form-label">
+                    Selected Event <span class="form-label__required" aria-hidden="true">*</span>
+                  </label>
+                  <select
+                    id="reg-event"
+                    name="eventId"
+                    class="form-control"
+                    aria-describedby="reg-event-error"
+                    required
+                  ></select>
+                  <div id="reg-event-error" class="field-error" aria-live="polite"></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="reg-notes" class="form-label">
+                    Accessibility or Dietary Notes (Optional)
+                  </label>
+                  <textarea
+                    id="reg-notes"
+                    name="notes"
+                    class="form-control"
+                    placeholder="Let organizers know if you need seating accommodations or meal preferences..."
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn--primary" style="width: 100%;">
+                  Confirm Registration
+                </button>
+              </form>
+            </div>
+
+            <aside id="selected-event-preview" class="info-panel" aria-live="polite"></aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="site-footer" class="site-footer"></footer>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

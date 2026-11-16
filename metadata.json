@@ -1,0 +1,6 @@
+{
+  "name": "Eventify",
+  "description": "An editorial campus and community event discovery and registration platform built with HTML, CSS, and vanilla JavaScript.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
